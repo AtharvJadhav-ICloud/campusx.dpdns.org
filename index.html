@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Campus Connect | We're Building Something Amazing</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+
+font-family:'Inter',sans-serif;
+background:#0B1120;
+color:white;
+overflow:hidden;
+
+}
+
+.background{
+
+position:fixed;
+width:100%;
+height:100%;
+
+background:
+
+radial-gradient(circle at 20% 20%,rgba(37,99,235,.25),transparent 40%),
+
+radial-gradient(circle at 80% 30%,rgba(79,70,229,.25),transparent 40%),
+
+radial-gradient(circle at 50% 80%,rgba(6,182,212,.18),transparent 40%),
+
+#0B1120;
+
+animation:bgMove 18s ease-in-out infinite alternate;
+
+}
+
+@keyframes bgMove{
+
+0%{
+
+transform:scale(1);
+
+}
+
+100%{
+
+transform:scale(1.15);
+
+}
+
+}
+
+.grid{
+
+position:absolute;
+
+inset:0;
+
+background-image:
+
+linear-gradient(rgba(255,255,255,.04) 1px,transparent 1px),
+
+linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px);
+
+background-size:70px 70px;
+
+mask-image:radial-gradient(circle,white 45%,transparent 100%);
+
+}
+
+.container{
+
+position:relative;
+
+height:100vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+text-align:center;
+
+padding:30px;
+
+z-index:2;
+
+}
+
+.card{
+
+width:min(820px,95vw);
+
+background:rgba(255,255,255,.06);
+
+backdrop-filter:blur(22px);
+
+border:1px solid rgba(255,255,255,.1);
+
+border-radius:28px;
+
+padding:60px;
+
+box-shadow:0 20px 80px rgba(0,0,0,.35);
+
+animation:fade 1.2s ease;
+
+}
+
+@keyframes fade{
+
+from{
+
+opacity:0;
+
+transform:translateY(30px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+.logo{
+
+width:80px;
+
+height:80px;
+
+margin:auto auto 30px;
+
+border-radius:22px;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+background:linear-gradient(135deg,#2563EB,#4F46E5);
+
+font-size:34px;
+
+font-weight:800;
+
+box-shadow:0 0 50px rgba(37,99,235,.45);
+
+}
+
+.badge{
+
+display:inline-block;
+
+padding:10px 18px;
+
+border-radius:999px;
+
+font-size:14px;
+
+background:rgba(37,99,235,.15);
+
+border:1px solid rgba(37,99,235,.35);
+
+color:#7DD3FC;
+
+margin-bottom:28px;
+
+}
+
+h1{
+
+font-size:clamp(40px,7vw,72px);
+
+line-height:1.05;
+
+font-weight:800;
+
+margin-bottom:25px;
+
+}
+
+.gradient{
+
+background:linear-gradient(90deg,#fff,#7DD3FC,#A5B4FC);
+
+-webkit-background-clip:text;
+
+-webkit-text-fill-color:transparent;
+
+}
+
+p{
+
+font-size:20px;
+
+line-height:1.8;
+
+color:#CBD5E1;
+
+max-width:700px;
+
+margin:auto;
+
+}
+
+.line{
+
+width:120px;
+
+height:4px;
+
+border-radius:999px;
+
+background:linear-gradient(90deg,#2563EB,#4F46E5);
+
+margin:45px auto;
+
+animation:pulse 2s infinite;
+
+}
+
+@keyframes pulse{
+
+50%{
+
+transform:scaleX(1.3);
+
+opacity:.5;
+
+}
+
+}
+
+.footer{
+
+margin-top:40px;
+
+font-size:15px;
+
+color:#94A3B8;
+
+}
+
+.footer span{
+
+color:white;
+
+font-weight:600;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="background"></div>
+
+<div class="grid"></div>
+
+<div class="container">
+
+<div class="card">
+
+<!-- Replace this with your actual logo -->
+<div class="logo">CC</div>
+
+<div class="badge">
+
+🚀 Website Under Development
+
+</div>
+
+<h1>
+
+We're Building <span class="gradient">Something Exceptional.</span>
+
+</h1>
+
+<p>
+
+The official Campus Connect website is currently being crafted to deliver a premium digital experience that reflects our vision of transforming campus communication, collaboration, and student engagement.
+
+<br><br>
+
+We're taking the time to build something meaningful—designed with the same attention to detail that defines the Campus Connect platform.
+
+</p>
+
+<div class="line"></div>
+
+<div class="footer">
+
+© 2026 <span>Campus Connect</span><br><br>
+
+Designed & Developed by Department of Computer Science,<br>
+
+B. K. Birla Night College ❤️
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
